@@ -4,10 +4,10 @@
 <head>
     <title>The Materialize CSS Example</title>
     <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
 </head>
 
@@ -36,29 +36,40 @@
         <a class="waves-effect orange waves-blue  btn ">GET START</a>
     </div>
     <br>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row center">
-            <div class="col l4 s12">
-                <i class="material-icons large blue-text">flash_on</i>
-                <h5>Speeds up development</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellendus ex vel quos commodi
-                    quia tenetur? Commodi nihil velit labore distinctio illum excepturi, doloribus voluptates in,
-                    obcaecati quisquam debitis eaque.</p>
+            <div class="parallax-container">
+                <div class="col s12 white ">
+                    <i class="material-icons large blue-text">flash_on</i>
+                    <h5>Speeds up development</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellendus ex vel quos
+                        commodi
+                        quia tenetur? Commodi nihil velit labore distinctio illum excepturi, doloribus voluptates in,
+                        obcaecati quisquam debitis eaque.</p>
+                </div>
+                <div class="parallax"><img src="https://cdn.pixabay.com/photo/2017/08/03/18/26/course-2577754_960_720.jpg"></div>
             </div>
-            <div class="col l4 s12">
-                <i class="material-icons large blue-text">group</i>
-                <h5>User Experience Focused</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellendus ex vel quos commodi
-                    quia tenetur? Commodi nihil velit labore distinctio illum excepturi, doloribus voluptates in,
-                    obcaecati quisquam debitis eaque.</p>
+            <div class="parallax-container">
+                <div class="col s12 white">
+                    <i class="material-icons large blue-text">group</i>
+                    <h5>User Experience Focused</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellendus ex vel quos
+                        commodi
+                        quia tenetur? Commodi nihil velit labore distinctio illum excepturi, doloribus voluptates in,
+                        obcaecati quisquam debitis eaque.</p>
+                </div>
+                <div class="parallax"><img src="https://cdn.pixabay.com/photo/2019/10/27/07/31/screen-background-4580904_960_720.jpg"></div>
             </div>
-            <div class="col l4 s12">
+            <div class="parallax-container">
+            <div class="col s12 white">
                 <i class="material-icons large blue-text">settings</i>
                 <h5>Easy to work with</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellendus ex vel quos commodi
                     quia tenetur? Commodi nihil velit labore distinctio illum excepturi, doloribus voluptates in,
                     obcaecati quisquam debitis eaque.</p>
             </div>
+            <div class="parallax"><img src="https://cdn.pixabay.com/photo/2018/08/24/20/43/meadow-3628843_960_720.jpg"></div>
+        </div>
         </div>
     </div>
     <footer class="page-footer orange">
@@ -98,6 +109,7 @@
         $(function () {
 
             $('.sidenav').sidenav();
+            $('.parallax').parallax();
 
         }); // end of document ready
     })(jQuery); // end of jQuery name space
